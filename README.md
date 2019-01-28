@@ -1,5 +1,6 @@
 # crud
 crud
+Made using of symfony 4. 
 1.  Clone this project using the following commands: git clone https://github.com/GothicBezimienny/crud.git
 2. Set up your environment like vhost to this project
 3. $ composer install
