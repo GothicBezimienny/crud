@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+        {% block body %}
+		
+<div class="card bg-light mb-3" style="max-width: 20rem;">
+<div class="card-header">		
+	<h1>User personal data</h1>
+</div>
+  <div class="card-body">
+    <h4 class="card-title"><h2>{{  user.imie }} {{  user.nazwisko }}</h2></h4>
+    <p class="card-text">
+		<p>{{  user.telefon }}</p>
+		<p>{{  user.address }}</p>
+	</p>
+  </div>
+	<a href="/edit/{{user.id}}" class="btn btn-dark update-article" data-id="{{ user.id }}">Update</a>
+	<br>
+	<a href="/" class="btn btn-dark">Back</a>
+  
+  </div>
+
+
+		{% endblock %}
+ 
